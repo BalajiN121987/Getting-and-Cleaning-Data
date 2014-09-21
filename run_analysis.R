@@ -5,14 +5,14 @@ setwd("C:/Users/balaji.n/Desktop/Coursera/Getting & Cleaning Data/Project/getdat
 #1 - Merging test and training datasets
 #Read the test data and the corresponding Activity and Subject
 test_data<-read.table("test//X_test.txt")
-test_data[,562]<-read.csv("test//Y_test.txt", sep="", header=FALSE)
-test_data[,563]<-read.csv("test//subject_test.txt", sep="", header=FALSE)
+test_data[,562]<-read.table("test//Y_test.txt")
+test_data[,563]<-read.table("test//subject_test.txt")
 test_data_label<-read.table("features.txt")
 
 #Read the train data and the corresponding Activity and Subject
 train_data<-read.table("train//X_train.txt")
-train_data[,562]<-read.csv("train//y_train.txt", sep="", header=FALSE)
-train_data[,563]<-read.csv("train//subject_train.txt", sep="", header=FALSE)
+train_data[,562]<-read.table("train//y_train.txt")
+train_data[,563]<-read.table("train//subject_train.txt")
 
 #Combine the test & training dataset
 final_dataset<-rbind(test_data,train_data)
