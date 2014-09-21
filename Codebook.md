@@ -13,10 +13,8 @@ Tidy dataset was created containing average of each variable for each activity a
 
 ###Tidy Dataset
 The original variable names were modified as follows in the tidy dataset
-1. '-mean' replaced by 'Mean'
-2. '-std' replaced by 'Std'
-3. Paranthesis have been removed (i.e. '-()' replaced by '')
+*. '-mean' replaced by 'Mean'
+*. '-std' replaced by 'Std'
+*. Paranthesis have been removed (i.e. '-()' replaced by '')
 
 
-* First
-* Second
