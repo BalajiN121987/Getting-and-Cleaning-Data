@@ -35,11 +35,11 @@ colnames(final_dataset)<-c(test_data_label$V2,"Activity","subject")
 
 #3 - Adding descriptive activity names to the names in the dataset
 activityLabels <- read.csv("activity_labels.txt", sep="", header=FALSE)
-currentActivity=1
+curr_Activity=1
 for(currentActivityLabels in activityLabels$V2)
 {
-	final_dataset$Activity<-gsub(currentActivity,currentActivityLabels,final_dataset$Activity)
-	currentActivity = currentActivity +1
+	final_dataset$Activity<-gsub(curr_Activity,currentActivityLabels,final_dataset$Activity)
+	curr_Activity= curr_Activity+1
 }
 
 final_dataset$Activity <- as.factor(final_dataset$Activity)
